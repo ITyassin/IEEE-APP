@@ -16,15 +16,3 @@ public interface VehicleRepository {
 
     boolean existsByPlateNumber(String plateNumber);
 }
-private Map<String, Vehicle> database = new HashMap<>();
-@Override
-public Vehicle findById(String id) {
-    return database.get(id);
-}
-@Override
-public void save(Vehicle vehicle) {
-    database.put(vehicle.getId(), vehicle);
-}
-
-void main() {
-}
